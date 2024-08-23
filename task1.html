@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button id="aa" >on</button>
+    <button id="aaa" >off</button>
+    <div id="d"></div>
+    <script> 
+var a=document.getElementsByTagName("button")
+console.log(a[0],a[1]);
+a[0].addEventListener("click",h)
+a[1].addEventListener("click",h1)
+ function h(){
+   var d=document.getElementById("d")
+   d.style.backgroundColor="black"
+ }
+ function h1(){
+   var d=document.getElementById("d")
+   d.style.backgroundColor="red"
+ }
+
+    
+    </script>
+</body>
+</html>

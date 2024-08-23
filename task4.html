@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a"></div>
+    <h1 id="h1" class="a16"></h1>
+    <h1 id="h2" class="a16"></h1>
+    <h1 id="h3" class="a16"></h1>
+    <h1 id="h4" class="a16"></h1>
+    <h1 id="h5" class="a16"></h1>
+    <h1 id="h6" class="a16"></h1>
+    <script>
+     var div=document.getElementById("a")
+        div.style.width="100vw"
+        div.style.height="100vh"
+       div.addEventListener("mouseover",f)
+      var h=document.getElementsByTagName("h1")
+      div.append(h[0],h[1],h[2],h[3],h[4],h[5])
+    //  console.log(div);
+       function f(){
+        for( i in h){
+        if(i%2==0){
+            h[i].innerText="hihi"
+         console.log(h[i]);
+         h[i].style.color="red"
+        }
+        else{
+            h[i].innerText="hihi"
+            console.log(h[i]);
+            h[i].style.color="aqua"
+        }
+        }
+       }
+    </script>
+</body>
+</html>

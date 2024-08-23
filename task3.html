@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+        position: fixed;
+       }
+    </style>
+</head>
+<h1>Vrindha</h1>
+<img id="a1" src="./my-pic.jpeg" width="100px" height="100px"  alt="">
+<img id="a2"  src="./WhatsApp Image 2024-08-16 at 9.27.57 PM.jpeg" width="100px" height="100px"  alt="">
+<img id="a3"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Suriya_at_68th_national_film_awards.JPG/220px-Suriya_at_68th_national_film_awards.JPG" width="100px" height="100px"  alt="">
+<div id="id" style="width: 500px;height: 500px;"></div>
+<body>
+    <script>
+var b=document.getElementsByTagName("img")
+b[0].addEventListener("click",h)
+b[1].addEventListener("click",h1)
+b[2].addEventListener("click",h2)
+var d=document.getElementById("id")
+var d1=document.createElement("img")
+d.appendChild(d1)
+     d1.width="500"
+     d1.height="500"
+function h(){
+            d1.src=b[0].src
+      }
+      function h1(){
+            d1.src=b[1].src
+        }
+      function h2(){
+            d1.src=b[2].src
+        }
+
+        var e=document.getElementsByTagName("h1")
+          e[0].style.color="red"
+          e[0].addEventListener("click",f)
+        
+function f(){
+      if(e[0].style.color=="black"){
+        e[0].style.color="red"
+    }
+    else{
+        e[0].style.color="black"
+    }
+}
+
+
+ 
+   </script>
+</body>
+</html>

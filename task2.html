@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:100px;
+            height: 100px;
+        }
+       /* img:hover{
+        transform: rotate(90deg);
+       } */
+    </style>
+</head>
+<body>
+    <button id="a1" >rotate 90 degree</button>
+    <button id="a2" >rotate 180 degree</button>
+    <button id="a3" >rotate 360 degree</button>
+    <br>
+    <br>
+    <img id="i1" src="./WhatsApp Image 2024-08-16 at 9.27.57 PM.jpeg" alt="">
+    
+    <script> 
+var a=document.getElementsByTagName("button")
+console.log(a[0],a[1],a[2]);
+a[0].addEventListener("click",h)
+a[1].addEventListener("click",h1)
+a[2].addEventListener("click",h2)
+ function h(){
+   var d=document.getElementById("i1")
+   d.style.transform="rotate"
+   d.style.rotate="90deg"
+ }
+ function h1(){
+   var d=document.getElementById("i1")
+   d.style.transform="rotate"
+   d.style.rotate="180deg"
+ }
+ function h2(){
+   var d=document.getElementById("i1")
+   d.style.transform="rotate"
+   d.style.rotate="360deg"
+ }
+
+
+    
+    </script>
+</body>
+</html>
